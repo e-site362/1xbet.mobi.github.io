@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tontine Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Tontine Manager</h1>
+    <p>Gérez vos tontines et cotisations simplement.</p>
+  </header>
+  <main id="main-content">
+    <!-- Auth Section -->
+    <section id="auth-section">
+      <div id="auth-forms">
+        <form id="login-form">
+          <h2>Connexion</h2>
+          <input type="text" id="login-username" placeholder="Nom d'utilisateur" required>
+          <input type="password" id="login-password" placeholder="Mot de passe" required>
+          <button type="submit">Se connecter</button>
+        </form>
+        <form id="register-form">
+          <h2>Créer un compte</h2>
+          <input type="text" id="register-username" placeholder="Nom d'utilisateur" required>
+          <input type="password" id="register-password" placeholder="Mot de passe" required>
+          <button type="submit">S'inscrire</button>
+        </form>
+      </div>
+    </section>
+    <!-- App Section (hidden until connected) -->
+    <section id="app-section" style="display:none;">
+      <button id="logout-btn">Déconnexion</button>
+      <section id="create-tontine">
+        <h2>Créer une nouvelle tontine</h2>
+        <form id="tontine-form">
+          <input type="text" id="tontine-name" placeholder="Nom de la tontine" required>
+          <input type="number" id="cotisation-amount" placeholder="Montant de la cotisation" required>
+          <select id="cotisation-frequency">
+            <option value="hebdomadaire">Hebdomadaire</option>
+            <option value="mensuel">Mensuel</option>
+          </select>
+          <button type="submit">Créer</button>
+        </form>
+      </section>
+      <section id="tontines-list">
+        <h2>Vos tontines</h2>
+        <div id="tontine-cards"></div>
+      </section>
+    </section>
+  </main>
+  <footer>
+    <button id="support-btn">❤️ Soutenez via Airtel Money</button>
+    <div id="airtel-support" style="display:none;">
+      <p>Envoyez votre soutien via Airtel Money :</p>
+      <p><strong>+237 6XX XX XX XX</strong></p>
+    </div>
+    <p>Projet open source - <a href="https://github.com/Pub554/tontine-manager" target="_blank">Voir sur GitHub</a></p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
