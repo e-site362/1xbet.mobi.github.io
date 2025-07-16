@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f6f8fa;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #218838;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+main {
+  max-width: 800px;
+  margin: 2em auto;
+  background: #fff;
+  padding: 2em;
+  border-radius: 6px;
+  box-shadow: 0 0 8px #e0e0e0;
+}
+h2 {
+  color: #218838;
+}
+form input, form select, form button {
+  margin: 0.5em 0;
+  padding: 0.7em;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+form button {
+  background: #218838;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+#tontine-cards {
+  margin-top: 1em;
+}
+.tontine-card {
+  border: 1px solid #218838;
+  padding: 1em;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  background: #f3fff3;
+}
+footer {
+  text-align: center;
+  margin: 2em 0 1em 0;
+}
+#support-btn {
+  background: #ff9800;
+  color: #fff;
+  border: none;
+  padding: 0.6em 1.2em;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 1em;
+}
+#airtel-support {
+  font-size: 1.1em;
+  color: #218838;
+}
+/* Auth section */
+#auth-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+#auth-forms {
+  display: flex;
+  gap: 2em;
+}
+#auth-forms form {
+  background: #f8f9fa;
+  padding: 1em;
+  border-radius: 6px;
+  box-shadow: 0 1px 6px #e0e0e0;
+  min-width: 250px;
+}
+#logout-btn {
+  float: right;
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  cursor: pointer;
+}
